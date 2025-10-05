@@ -1,4 +1,4 @@
-import { useState, useEffect, use } from 'react';
+import { useState, useEffect } from 'react';
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import logo from '../assets/img/logo.svg';
 import navIcon1 from '../assets/img/nav-icon1.svg';
@@ -29,7 +29,7 @@ export const NavBar = () => {
     return (
         <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
             <Container>
-                <Navbar.Brand href="#home"><img src={''} alt="LOGO" /></Navbar.Brand>
+                <Navbar.Brand href="#home"><img src={logo} alt="LOGO" /></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav">
                     <span className='navbar-toggler-icon'></span>
                 </Navbar.Toggle>
@@ -41,9 +41,9 @@ export const NavBar = () => {
                     </Nav>
                     <span className='navbar-text'>
                         <div className='social-icon'>
-                            <a href="$"><img src={''} /></a>
-                            <a href="$"><img src={''} /></a>
-                            <a href="$"><img src={''} /></a>
+                            <a href="$"><img src={navIcon1} alt='nav1' /></a>
+                            <a href="$"><img src={navIcon2} alt='nav2' /></a>
+                            <a href="$"><img src={navIcon3} alt='nav3' /></a>
                         </div>
 
                         <button className="vvd" onClick={() => console.log('connect')}><span>Let's Connect</span></button>
